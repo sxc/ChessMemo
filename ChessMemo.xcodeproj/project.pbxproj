@@ -11,6 +11,8 @@
 		349C41CE2661B2EA0099C5F2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349C41CD2661B2EA0099C5F2 /* ContentView.swift */; };
 		349C41D02661B2EC0099C5F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 349C41CF2661B2EC0099C5F2 /* Assets.xcassets */; };
 		349C41D32661B2EC0099C5F2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 349C41D22661B2EC0099C5F2 /* Preview Assets.xcassets */; };
+		349C41DC2661B8210099C5F2 /* Main.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 349C41DA2661B8210099C5F2 /* Main.xcdatamodeld */; };
+		34BD42E32661ED2D00AD8D14 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34BD42E22661ED2D00AD8D14 /* DataController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +22,8 @@
 		349C41CF2661B2EC0099C5F2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		349C41D22661B2EC0099C5F2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		349C41D42661B2EC0099C5F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		349C41DB2661B8210099C5F2 /* Main.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Main.xcdatamodel; sourceTree = "<group>"; };
+		34BD42E22661ED2D00AD8D14 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +61,8 @@
 				349C41CF2661B2EC0099C5F2 /* Assets.xcassets */,
 				349C41D42661B2EC0099C5F2 /* Info.plist */,
 				349C41D12661B2EC0099C5F2 /* Preview Content */,
+				349C41DA2661B8210099C5F2 /* Main.xcdatamodeld */,
+				34BD42E22661ED2D00AD8D14 /* DataController.swift */,
 			);
 			path = ChessMemo;
 			sourceTree = "<group>";
@@ -138,6 +144,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				349C41DC2661B8210099C5F2 /* Main.xcdatamodeld in Sources */,
+				34BD42E32661ED2D00AD8D14 /* DataController.swift in Sources */,
 				349C41CE2661B2EA0099C5F2 /* ContentView.swift in Sources */,
 				349C41CC2661B2EA0099C5F2 /* ChessMemoApp.swift in Sources */,
 			);
@@ -328,6 +336,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		349C41DA2661B8210099C5F2 /* Main.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				349C41DB2661B8210099C5F2 /* Main.xcdatamodel */,
+			);
+			currentVersion = 349C41DB2661B8210099C5F2 /* Main.xcdatamodel */;
+			path = Main.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 349C41C02661B2E90099C5F2 /* Project object */;
 }
