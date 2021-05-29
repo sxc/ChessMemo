@@ -13,6 +13,7 @@
 		349C41D32661B2EC0099C5F2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 349C41D22661B2EC0099C5F2 /* Preview Assets.xcassets */; };
 		349C41DC2661B8210099C5F2 /* Main.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 349C41DA2661B8210099C5F2 /* Main.xcdatamodeld */; };
 		34BD42E32661ED2D00AD8D14 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34BD42E22661ED2D00AD8D14 /* DataController.swift */; };
+		34BD42E726620CCB00AD8D14 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34BD42E626620CCB00AD8D14 /* CloudKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,8 @@
 		349C41D42661B2EC0099C5F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		349C41DB2661B8210099C5F2 /* Main.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Main.xcdatamodel; sourceTree = "<group>"; };
 		34BD42E22661ED2D00AD8D14 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		34BD42E426620C9A00AD8D14 /* ChessMemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ChessMemo.entitlements; sourceTree = "<group>"; };
+		34BD42E626620CCB00AD8D14 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34BD42E726620CCB00AD8D14 /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +46,7 @@
 			children = (
 				349C41CA2661B2EA0099C5F2 /* ChessMemo */,
 				349C41C92661B2EA0099C5F2 /* Products */,
+				34BD42E526620CCB00AD8D14 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +61,7 @@
 		349C41CA2661B2EA0099C5F2 /* ChessMemo */ = {
 			isa = PBXGroup;
 			children = (
+				34BD42E426620C9A00AD8D14 /* ChessMemo.entitlements */,
 				349C41CB2661B2EA0099C5F2 /* ChessMemoApp.swift */,
 				349C41CD2661B2EA0099C5F2 /* ContentView.swift */,
 				349C41CF2661B2EC0099C5F2 /* Assets.xcassets */,
@@ -73,6 +79,14 @@
 				349C41D22661B2EC0099C5F2 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		34BD42E526620CCB00AD8D14 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				34BD42E626620CCB00AD8D14 /* CloudKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -275,6 +289,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ChessMemo/ChessMemo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"ChessMemo/Preview Content\"";
 				DEVELOPMENT_TEAM = SX2P37942F;
@@ -297,6 +312,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ChessMemo/ChessMemo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"ChessMemo/Preview Content\"";
 				DEVELOPMENT_TEAM = SX2P37942F;
