@@ -35,7 +35,8 @@ struct ContentView_Previews: PreviewProvider {
         static var dataController = DataController.preview
         
         static var previews: some View {
-            ProjectsView(showClosedProjects: false)
+//            ProjectsView(showClosedProjects: false)
+            ContentView()
                 .environment(\.managedObjectContext, dataController.container.viewContext)
                 .environmentObject(dataController)
         }

@@ -12,6 +12,8 @@
 		349C41D02661B2EC0099C5F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 349C41CF2661B2EC0099C5F2 /* Assets.xcassets */; };
 		349C41D32661B2EC0099C5F2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 349C41D22661B2EC0099C5F2 /* Preview Assets.xcassets */; };
 		349C41DC2661B8210099C5F2 /* Main.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 349C41DA2661B8210099C5F2 /* Main.xcdatamodeld */; };
+		34B5100B2664783200AA30DD /* Item-CoreDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34B5100A2664783200AA30DD /* Item-CoreDataHelper.swift */; };
+		34B5100D26648B3100AA30DD /* Project-CoreDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34B5100C26648B3100AA30DD /* Project-CoreDataHelper.swift */; };
 		34BD42E32661ED2D00AD8D14 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34BD42E22661ED2D00AD8D14 /* DataController.swift */; };
 		34BD42E726620CCB00AD8D14 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34BD42E626620CCB00AD8D14 /* CloudKit.framework */; };
 		34BD42E926620DAF00AD8D14 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34BD42E826620DAF00AD8D14 /* HomeView.swift */; };
@@ -26,6 +28,8 @@
 		349C41D22661B2EC0099C5F2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		349C41D42661B2EC0099C5F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		349C41DB2661B8210099C5F2 /* Main.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Main.xcdatamodel; sourceTree = "<group>"; };
+		34B5100A2664783200AA30DD /* Item-CoreDataHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Item-CoreDataHelper.swift"; sourceTree = "<group>"; };
+		34B5100C26648B3100AA30DD /* Project-CoreDataHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Project-CoreDataHelper.swift"; sourceTree = "<group>"; };
 		34BD42E22661ED2D00AD8D14 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 		34BD42E426620C9A00AD8D14 /* ChessMemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ChessMemo.entitlements; sourceTree = "<group>"; };
 		34BD42E626620CCB00AD8D14 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
@@ -75,6 +79,8 @@
 				34BD42E22661ED2D00AD8D14 /* DataController.swift */,
 				34BD42E826620DAF00AD8D14 /* HomeView.swift */,
 				34BD42EA26620F0700AD8D14 /* ProjectsView.swift */,
+				34B5100A2664783200AA30DD /* Item-CoreDataHelper.swift */,
+				34B5100C26648B3100AA30DD /* Project-CoreDataHelper.swift */,
 			);
 			path = ChessMemo;
 			sourceTree = "<group>";
@@ -166,9 +172,11 @@
 			files = (
 				34BD42EB26620F0700AD8D14 /* ProjectsView.swift in Sources */,
 				349C41DC2661B8210099C5F2 /* Main.xcdatamodeld in Sources */,
+				34B5100B2664783200AA30DD /* Item-CoreDataHelper.swift in Sources */,
 				34BD42E32661ED2D00AD8D14 /* DataController.swift in Sources */,
 				349C41CE2661B2EA0099C5F2 /* ContentView.swift in Sources */,
 				34BD42E926620DAF00AD8D14 /* HomeView.swift in Sources */,
+				34B5100D26648B3100AA30DD /* Project-CoreDataHelper.swift in Sources */,
 				349C41CC2661B2EA0099C5F2 /* ChessMemoApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
