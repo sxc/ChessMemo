@@ -20,6 +20,7 @@
 		34BD42EB26620F0700AD8D14 /* ProjectsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34BD42EA26620F0700AD8D14 /* ProjectsView.swift */; };
 		34CB215B2665D195004E70D9 /* EditItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34CB215A2665D195004E70D9 /* EditItemView.swift */; };
 		34CB215D2665D75E004E70D9 /* ItemRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34CB215C2665D75E004E70D9 /* ItemRowView.swift */; };
+		34CB215F2665E033004E70D9 /* Binding-OnChange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34CB215E2665E033004E70D9 /* Binding-OnChange.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,7 @@
 		34BD42EA26620F0700AD8D14 /* ProjectsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsView.swift; sourceTree = "<group>"; };
 		34CB215A2665D195004E70D9 /* EditItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditItemView.swift; sourceTree = "<group>"; };
 		34CB215C2665D75E004E70D9 /* ItemRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemRowView.swift; sourceTree = "<group>"; };
+		34CB215E2665E033004E70D9 /* Binding-OnChange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Binding-OnChange.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +89,7 @@
 				34B5100C26648B3100AA30DD /* Project-CoreDataHelper.swift */,
 				34CB215A2665D195004E70D9 /* EditItemView.swift */,
 				34CB215C2665D75E004E70D9 /* ItemRowView.swift */,
+				34CB215E2665E033004E70D9 /* Binding-OnChange.swift */,
 			);
 			path = ChessMemo;
 			sourceTree = "<group>";
@@ -182,6 +185,7 @@
 				34BD42E32661ED2D00AD8D14 /* DataController.swift in Sources */,
 				34CB215D2665D75E004E70D9 /* ItemRowView.swift in Sources */,
 				349C41CE2661B2EA0099C5F2 /* ContentView.swift in Sources */,
+				34CB215F2665E033004E70D9 /* Binding-OnChange.swift in Sources */,
 				34BD42E926620DAF00AD8D14 /* HomeView.swift in Sources */,
 				34B5100D26648B3100AA30DD /* Project-CoreDataHelper.swift in Sources */,
 				349C41CC2661B2EA0099C5F2 /* ChessMemoApp.swift in Sources */,
