@@ -48,6 +48,15 @@ struct EditItemView: View {
             
         }
         .navigationTitle("Edit Item")
+        .onDisappear(perform: update)
+        
+    }
+    
+    func update() {
+        item.title = title
+        item.detail = detail
+        item.priority = Int16(priority)
+        item.completed = completed
     }
 }
 
