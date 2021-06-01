@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3478C2C0266605D10026D841 /* ProjectHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3478C2BF266605D10026D841 /* ProjectHeaderView.swift */; };
+		3478C2C2266609680026D841 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3478C2C1266609680026D841 /* Colors.xcassets */; };
 		349C41CC2661B2EA0099C5F2 /* ChessMemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349C41CB2661B2EA0099C5F2 /* ChessMemoApp.swift */; };
 		349C41CE2661B2EA0099C5F2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349C41CD2661B2EA0099C5F2 /* ContentView.swift */; };
 		349C41D02661B2EC0099C5F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 349C41CF2661B2EC0099C5F2 /* Assets.xcassets */; };
@@ -24,6 +26,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3478C2BF266605D10026D841 /* ProjectHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectHeaderView.swift; sourceTree = "<group>"; };
+		3478C2C1266609680026D841 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		349C41C82661B2EA0099C5F2 /* ChessMemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChessMemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		349C41CB2661B2EA0099C5F2 /* ChessMemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChessMemoApp.swift; sourceTree = "<group>"; };
 		349C41CD2661B2EA0099C5F2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -79,6 +83,7 @@
 				349C41CB2661B2EA0099C5F2 /* ChessMemoApp.swift */,
 				349C41CD2661B2EA0099C5F2 /* ContentView.swift */,
 				349C41CF2661B2EC0099C5F2 /* Assets.xcassets */,
+				3478C2C1266609680026D841 /* Colors.xcassets */,
 				349C41D42661B2EC0099C5F2 /* Info.plist */,
 				349C41D12661B2EC0099C5F2 /* Preview Content */,
 				349C41DA2661B8210099C5F2 /* Main.xcdatamodeld */,
@@ -90,6 +95,7 @@
 				34CB215A2665D195004E70D9 /* EditItemView.swift */,
 				34CB215C2665D75E004E70D9 /* ItemRowView.swift */,
 				34CB215E2665E033004E70D9 /* Binding-OnChange.swift */,
+				3478C2BF266605D10026D841 /* ProjectHeaderView.swift */,
 			);
 			path = ChessMemo;
 			sourceTree = "<group>";
@@ -167,6 +173,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3478C2C2266609680026D841 /* Colors.xcassets in Resources */,
 				349C41D32661B2EC0099C5F2 /* Preview Assets.xcassets in Resources */,
 				349C41D02661B2EC0099C5F2 /* Assets.xcassets in Resources */,
 			);
@@ -180,6 +187,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				34BD42EB26620F0700AD8D14 /* ProjectsView.swift in Sources */,
+				3478C2C0266605D10026D841 /* ProjectHeaderView.swift in Sources */,
 				349C41DC2661B8210099C5F2 /* Main.xcdatamodeld in Sources */,
 				34B5100B2664783200AA30DD /* Item-CoreDataHelper.swift in Sources */,
 				34BD42E32661ED2D00AD8D14 /* DataController.swift in Sources */,
