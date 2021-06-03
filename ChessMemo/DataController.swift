@@ -72,7 +72,7 @@ class DataController: ObservableObject {
         }
     }
     
-    func delte(_ object: NSManagedObject) {
+    func delete(_ object: NSManagedObject) {
         container.viewContext.delete(object)
     }
     
