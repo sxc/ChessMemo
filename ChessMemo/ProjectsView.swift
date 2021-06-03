@@ -38,15 +38,24 @@ struct ProjectsView: View {
     
     var body: some View {
         NavigationView {
+            
+            Group {
+                if projects.wrappedValue.isEmpty {
+                    Text("There's nothing here right now")
+                        .foregroundColor(.secondary)
+                    
+                } else {
+                    
+
+            
             List {
                 ForEach(projects.wrappedValue) { project in
                     Section(header: ProjectHeaderView(project: project)) {
                         ForEach(project.projectItems(using: sortOrder)) { item in
                             ItemRowView(project: project, item: item)
-                                
                             }
                         .onDelete { offsets in
-                            let allItems = project.projectItems
+                            let allItems = project.projectItems(using: sortOrder)
                             
                             for offset in offsets {
                                 let item = allItems[offset]
@@ -73,8 +82,12 @@ struct ProjectsView: View {
                         }
                     }
                 }
-            
             .listStyle(InsetGroupedListStyle())
+             
+                }
+                
+            }
+           
             .navigationTitle(showClosedProjects ? "Closed Projects" : "Open Projects")
         
         .toolbar {
@@ -110,41 +123,9 @@ struct ProjectsView: View {
                     .default(Text("Title")) { sortOrder = .title }
                 ])
             }
+            SelectSomethingView()
         }
-    }
-    
-
-        
-//        guard let sortingKeyPath = sortingKeyPath else {
-//            return project.projectItemsDefaultSorted
-//        }
-//
-//        return project.projectItems.sorted(by: _sortingKeyPath)
-        
-//        if let sortingKeyPath = sortingKeyPath {
-//            if sortingKeyPath == \Item.itemTitle {
-//                return project.projectItems.sorted(by: sortingKeyPath, as: String.self)
-//
-//            } else if sortingKeyPath == \Item.itemCreationDate {
-//                return  project.projectItems.sorted(by: sortingKeyPath, as: Date.self)
-//            }
-//        }
-//
-//        return project.projectItemsDefaultSorted
-        
-//        guard let sortDescriptor = sortDescriptor else {
-//            return project.projectItemsDefaultSorted
-//        }
-//        return project.projectItems.sorted(by: sortDescriptor)
-        
-//        guard let sortingKeyPath = sortingKeyPath else {
-//            return project.projectItemsDefaultSorted
-//        }
-//        
-//        return project.projectItems.sorted(by: sortingKeyPath)
-        
- 
-    
+    } 
 }
 
 struct ProjectsView_Previews: PreviewProvider {
