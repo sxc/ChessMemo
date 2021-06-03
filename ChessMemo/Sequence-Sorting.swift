@@ -27,4 +27,36 @@ extension Sequence {
         let function: (Value, Value) -> Bool = (<)
         return self.sorted(by: keyPath, using: function)
     }
+    
+    func sorted(by keyPath: PartialKeyPath<Element>) -> [Element] {
+        guard let keyPathString = keyPath._kvcKeyPathString else { return Array(self) }
+        let sortDescriptor = NSSortDescriptor(key: keyPathString, ascending: true)
+        return self.sorted(by: sortDescriptor)
+    }
+    
+    
+    func sorted(by sortDescriptor: NSSortDescriptor) -> [Element] {
+        self.sorted  {
+            
+            sortDescriptor.compare($0, to: $1) == .orderedAscending
+        }
+    }
+    
+    func sorted(by sortDescriptors: [NSSortDescriptor]) -> [Element] {
+        self.sorted {
+            for descriptor in sortDescriptors {
+                switch descriptor.compare($0, to: $1) {
+                case .orderedAscending:
+                    return true
+                case .orderedDescending:
+                    return false
+                case .orderedSame:
+                    continue
+                }
+            }
+            
+            return false 
+        }
+    }
+    
 }

@@ -17,6 +17,9 @@ struct ProjectsView: View {
     
     @State private var sortingKeyPath: PartialKeyPath<Item>?
     
+    @State private var sortDescriptor: NSSortDescriptor?
+    
+    
     
     let sortingKeyPaths = [
         \Item.itemTitle,
@@ -111,10 +114,9 @@ struct ProjectsView: View {
         }
             .actionSheet(isPresented: $showingSortOrder) {
                 ActionSheet(title: Text("Sort items"), message: nil, buttons: [
-                    .default(Text("Optimized")) { sortingKeyPath = nil  },
-                    .default(Text("Creation Date")) { sortingKeyPath = \Item.itemCreationDate },
-                    .default(Text("Title")) {sortingKeyPath = \Item.itemTitle }
-                    
+                    .default(Text("Optimized")) { sortingKeyPath = nil    },
+                    .default(Text("Creation Date")) { sortingKeyPath = \Item.creationDate },
+                    .default(Text("Title")) { sortingKeyPath = \Item.title }
                 ])
             }
         }
@@ -136,16 +138,28 @@ struct ProjectsView: View {
 //
 //        return project.projectItems.sorted(by: _sortingKeyPath)
         
-        if let sortingKeyPath = sortingKeyPath {
-            if sortingKeyPath == \Item.itemTitle {
-                return project.projectItems.sorted(by: sortingKeyPath, as: String.self)
-                
-            } else if sortingKeyPath == \Item.itemCreationDate {
-                return  project.projectItems.sorted(by: sortingKeyPath, as: Date.self)
-            }
+//        if let sortingKeyPath = sortingKeyPath {
+//            if sortingKeyPath == \Item.itemTitle {
+//                return project.projectItems.sorted(by: sortingKeyPath, as: String.self)
+//
+//            } else if sortingKeyPath == \Item.itemCreationDate {
+//                return  project.projectItems.sorted(by: sortingKeyPath, as: Date.self)
+//            }
+//        }
+//
+//        return project.projectItemsDefaultSorted
+        
+//        guard let sortDescriptor = sortDescriptor else {
+//            return project.projectItemsDefaultSorted
+//        }
+//        return project.projectItems.sorted(by: sortDescriptor)
+        
+        guard let sortingKeyPath = sortingKeyPath else {
+            return project.projectItemsDefaultSorted
         }
         
-        return project.projectItemsDefaultSorted
+        return project.projectItems.sorted(by: sortingKeyPath)
+        
     }
     
 }
