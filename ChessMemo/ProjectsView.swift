@@ -15,6 +15,14 @@ struct ProjectsView: View {
     
     @State private var sortOrder = Item.SortOrder.optimized
     
+    @State private var sortingKeyPath: PartialKeyPath<Item>?
+    
+    
+    let sortingKeyPaths = [
+        \Item.itemTitle,
+        \Item.itemCreationDate
+    ]
+    
     @EnvironmentObject var dataController: DataController
     @Environment(\.managedObjectContext) var managedObjectContext
     
@@ -25,6 +33,8 @@ struct ProjectsView: View {
     
     init(showClosedProjects: Bool) {
         self.showClosedProjects = showClosedProjects
+        
+        
         
         projects = FetchRequest<Project>(entity: Project.entity(),
                                         sortDescriptors: [
@@ -101,9 +111,9 @@ struct ProjectsView: View {
         }
             .actionSheet(isPresented: $showingSortOrder) {
                 ActionSheet(title: Text("Sort items"), message: nil, buttons: [
-                    .default(Text("Optimized")) { sortOrder = .optimized },
-                    .default(Text("Creation Date")) { sortOrder = .creationDate },
-                    .default(Text("Title")) {sortOrder = .title },
+                    .default(Text("Optimized")) { sortingKeyPath = nil  },
+                    .default(Text("Creation Date")) { sortingKeyPath = \Item.itemCreationDate },
+                    .default(Text("Title")) {sortingKeyPath = \Item.itemTitle }
                     
                 ])
             }
@@ -111,14 +121,31 @@ struct ProjectsView: View {
     }
     
     func items(for project: Project) -> [Item] {
-        switch sortOrder {
-        case .title:
-            return project.projectItems.sorted { $0.itemTitle < $1.itemTitle}
-        case .creationDate:
-            return project.projectItems.sorted { $0.itemCreationDate < $1.itemCreationDate}
-        default:
-            return project.projectItemsDefaultSorted
+//        switch sortOrder {
+//        case .title:
+//            return project.projectItems.sorted(by: \Item.itemTitle)
+//        case .creationDate:
+//            return project.projectItems.sorted(by: \Item.itemCreationDate)
+//        default:
+//            return project.projectItemsDefaultSorted
+//        }
+        
+//        guard let sortingKeyPath = sortingKeyPath else {
+//            return project.projectItemsDefaultSorted
+//        }
+//
+//        return project.projectItems.sorted(by: _sortingKeyPath)
+        
+        if let sortingKeyPath = sortingKeyPath {
+            if sortingKeyPath == \Item.itemTitle {
+                return project.projectItems.sorted(by: sortingKeyPath, as: String.self)
+                
+            } else if sortingKeyPath == \Item.itemCreationDate {
+                return  project.projectItems.sorted(by: sortingKeyPath, as: Date.self)
+            }
         }
+        
+        return project.projectItemsDefaultSorted
     }
     
 }
