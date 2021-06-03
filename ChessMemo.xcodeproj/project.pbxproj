@@ -19,6 +19,8 @@
 		34A130AE2668A2D500377B3A /* SelectSomethingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A130AD2668A2D500377B3A /* SelectSomethingView.swift */; };
 		34A130B02668A6F100377B3A /* Bundle-Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A130AF2668A6F100377B3A /* Bundle-Decodable.swift */; };
 		34A130B22668AD5300377B3A /* Awards.json in Resources */ = {isa = PBXBuildFile; fileRef = 34A130B12668AD5300377B3A /* Awards.json */; };
+		34A130B42668ADF200377B3A /* Award.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A130B32668ADF200377B3A /* Award.swift */; };
+		34A130B62668AEBA00377B3A /* AwardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A130B52668AEBA00377B3A /* AwardsView.swift */; };
 		34B5100B2664783200AA30DD /* Item-CoreDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34B5100A2664783200AA30DD /* Item-CoreDataHelper.swift */; };
 		34B5100D26648B3100AA30DD /* Project-CoreDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34B5100C26648B3100AA30DD /* Project-CoreDataHelper.swift */; };
 		34BD42E32661ED2D00AD8D14 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34BD42E22661ED2D00AD8D14 /* DataController.swift */; };
@@ -45,6 +47,8 @@
 		34A130AD2668A2D500377B3A /* SelectSomethingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectSomethingView.swift; sourceTree = "<group>"; };
 		34A130AF2668A6F100377B3A /* Bundle-Decodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle-Decodable.swift"; sourceTree = "<group>"; };
 		34A130B12668AD5300377B3A /* Awards.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Awards.json; sourceTree = "<group>"; };
+		34A130B32668ADF200377B3A /* Award.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Award.swift; sourceTree = "<group>"; };
+		34A130B52668AEBA00377B3A /* AwardsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AwardsView.swift; sourceTree = "<group>"; };
 		34B5100A2664783200AA30DD /* Item-CoreDataHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Item-CoreDataHelper.swift"; sourceTree = "<group>"; };
 		34B5100C26648B3100AA30DD /* Project-CoreDataHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Project-CoreDataHelper.swift"; sourceTree = "<group>"; };
 		34BD42E22661ED2D00AD8D14 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
@@ -111,6 +115,8 @@
 				34A130AD2668A2D500377B3A /* SelectSomethingView.swift */,
 				34A130AF2668A6F100377B3A /* Bundle-Decodable.swift */,
 				34A130B12668AD5300377B3A /* Awards.json */,
+				34A130B32668ADF200377B3A /* Award.swift */,
+				34A130B52668AEBA00377B3A /* AwardsView.swift */,
 			);
 			path = ChessMemo;
 			sourceTree = "<group>";
@@ -204,11 +210,13 @@
 			files = (
 				34BD42EB26620F0700AD8D14 /* ProjectsView.swift in Sources */,
 				3478C2C0266605D10026D841 /* ProjectHeaderView.swift in Sources */,
+				34A130B62668AEBA00377B3A /* AwardsView.swift in Sources */,
 				349C41DC2661B8210099C5F2 /* Main.xcdatamodeld in Sources */,
 				34B5100B2664783200AA30DD /* Item-CoreDataHelper.swift in Sources */,
 				3478C2C426660B410026D841 /* EditProjectView.swift in Sources */,
 				34BD42E32661ED2D00AD8D14 /* DataController.swift in Sources */,
 				34A130AE2668A2D500377B3A /* SelectSomethingView.swift in Sources */,
+				34A130B42668ADF200377B3A /* Award.swift in Sources */,
 				34CB215D2665D75E004E70D9 /* ItemRowView.swift in Sources */,
 				349C41CE2661B2EA0099C5F2 /* ContentView.swift in Sources */,
 				34CB215F2665E033004E70D9 /* Binding-OnChange.swift in Sources */,
