@@ -13,6 +13,7 @@ struct ProjectsView: View {
     
     @State private var showingSortOrder = false
     
+    @State private var sortOrder = Item.SortOrder.optimized
     
     @EnvironmentObject var dataController: DataController
     @Environment(\.managedObjectContext) var managedObjectContext
@@ -100,10 +101,9 @@ struct ProjectsView: View {
         }
             .actionSheet(isPresented: $showingSortOrder) {
                 ActionSheet(title: Text("Sort items"), message: nil, buttons: [
-                    .default(Text("Optimized")) { },
-                    .default(Text("Creation Date")) {},
-                    .default(Text("Creation Date")) {},
-                    .default(Text("Title")) {}
+                    .default(Text("Optimized")) { sortOrder = .optimized },
+                    .default(Text("Creation Date")) { sortOrder = .creationDate },
+                    .default(Text("Title")) {sortOrder = .title },
                     
                 ])
             }
@@ -111,7 +111,14 @@ struct ProjectsView: View {
     }
     
     func items(for project: Project) -> [Item] {
-        []
+        switch sortOrder {
+        case .title:
+            return project.projectItems.sorted { $0.itemTitle < $1.itemTitle}
+        case .creationDate:
+            return project.projectItems.sorted { $0.itemCreationDate < $1.itemCreationDate}
+        default:
+            return project.projectItemsDefaultSorted
+        }
     }
     
 }
