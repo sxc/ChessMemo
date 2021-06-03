@@ -15,16 +15,16 @@ struct ProjectsView: View {
     
     @State private var sortOrder = Item.SortOrder.optimized
     
-    @State private var sortingKeyPath: PartialKeyPath<Item>?
-    
-    @State private var sortDescriptor: NSSortDescriptor?
-    
-    
-    
-    let sortingKeyPaths = [
-        \Item.itemTitle,
-        \Item.itemCreationDate
-    ]
+//    @State private var sortingKeyPath: PartialKeyPath<Item>?
+//
+//    @State private var sortDescriptor: NSSortDescriptor?
+//
+//
+//
+//    let sortingKeyPaths = [
+//        \Item.itemTitle,
+//        \Item.itemCreationDate
+//    ]
     
     @EnvironmentObject var dataController: DataController
     @Environment(\.managedObjectContext) var managedObjectContext
@@ -50,7 +50,7 @@ struct ProjectsView: View {
             List {
                 ForEach(projects.wrappedValue) { project in
                     Section(header: ProjectHeaderView(project: project)) {
-                        ForEach(items(for: project)) { item in
+                        ForEach(project.projectItems(using: sortOrder)) { item in
                             ItemRowView(item: item)
                                 
                             }
@@ -114,23 +114,15 @@ struct ProjectsView: View {
         }
             .actionSheet(isPresented: $showingSortOrder) {
                 ActionSheet(title: Text("Sort items"), message: nil, buttons: [
-                    .default(Text("Optimized")) { sortingKeyPath = nil    },
-                    .default(Text("Creation Date")) { sortingKeyPath = \Item.creationDate },
-                    .default(Text("Title")) { sortingKeyPath = \Item.title }
+                    .default(Text("Optimized")) { sortOrder = .optimized },
+                    .default(Text("Creation Date")) { sortOrder = .creationDate },
+                    .default(Text("Title")) { sortOrder = .title }
                 ])
             }
         }
     }
     
-    func items(for project: Project) -> [Item] {
-//        switch sortOrder {
-//        case .title:
-//            return project.projectItems.sorted(by: \Item.itemTitle)
-//        case .creationDate:
-//            return project.projectItems.sorted(by: \Item.itemCreationDate)
-//        default:
-//            return project.projectItemsDefaultSorted
-//        }
+
         
 //        guard let sortingKeyPath = sortingKeyPath else {
 //            return project.projectItemsDefaultSorted
@@ -154,13 +146,13 @@ struct ProjectsView: View {
 //        }
 //        return project.projectItems.sorted(by: sortDescriptor)
         
-        guard let sortingKeyPath = sortingKeyPath else {
-            return project.projectItemsDefaultSorted
-        }
+//        guard let sortingKeyPath = sortingKeyPath else {
+//            return project.projectItemsDefaultSorted
+//        }
+//        
+//        return project.projectItems.sorted(by: sortingKeyPath)
         
-        return project.projectItems.sorted(by: sortingKeyPath)
-        
-    }
+ 
     
 }
 
