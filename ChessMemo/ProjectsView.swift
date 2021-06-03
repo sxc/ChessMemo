@@ -15,16 +15,7 @@ struct ProjectsView: View {
     
     @State private var sortOrder = Item.SortOrder.optimized
     
-//    @State private var sortingKeyPath: PartialKeyPath<Item>?
-//
-//    @State private var sortDescriptor: NSSortDescriptor?
-//
-//
-//
-//    let sortingKeyPaths = [
-//        \Item.itemTitle,
-//        \Item.itemCreationDate
-//    ]
+
     
     @EnvironmentObject var dataController: DataController
     @Environment(\.managedObjectContext) var managedObjectContext
@@ -51,7 +42,7 @@ struct ProjectsView: View {
                 ForEach(projects.wrappedValue) { project in
                     Section(header: ProjectHeaderView(project: project)) {
                         ForEach(project.projectItems(using: sortOrder)) { item in
-                            ItemRowView(item: item)
+                            ItemRowView(project: project, item: item)
                                 
                             }
                         .onDelete { offsets in
