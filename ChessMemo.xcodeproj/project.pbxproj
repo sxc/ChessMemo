@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3423D8112679933500ACDC44 /* ItemListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3423D8102679933500ACDC44 /* ItemListView.swift */; };
+		3423D813267996CD00ACDC44 /* ProjectSummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3423D812267996CD00ACDC44 /* ProjectSummaryView.swift */; };
 		3478C2C0266605D10026D841 /* ProjectHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3478C2BF266605D10026D841 /* ProjectHeaderView.swift */; };
 		3478C2C2266609680026D841 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3478C2C1266609680026D841 /* Colors.xcassets */; };
 		3478C2C426660B410026D841 /* EditProjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3478C2C326660B410026D841 /* EditProjectView.swift */; };
@@ -35,6 +37,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3423D8102679933500ACDC44 /* ItemListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemListView.swift; sourceTree = "<group>"; };
+		3423D812267996CD00ACDC44 /* ProjectSummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectSummaryView.swift; sourceTree = "<group>"; };
 		3478C2BF266605D10026D841 /* ProjectHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectHeaderView.swift; sourceTree = "<group>"; };
 		3478C2C1266609680026D841 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		3478C2C326660B410026D841 /* EditProjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProjectView.swift; sourceTree = "<group>"; };
@@ -123,6 +127,8 @@
 				34A130B52668AEBA00377B3A /* AwardsView.swift */,
 				34FCF4F52669C00300575C1C /* Color-Additions.swift */,
 				34C00030267859DB00E80748 /* Localizable.stringsdict */,
+				3423D8102679933500ACDC44 /* ItemListView.swift */,
+				3423D812267996CD00ACDC44 /* ProjectSummaryView.swift */,
 			);
 			path = ChessMemo;
 			sourceTree = "<group>";
@@ -217,6 +223,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				34BD42EB26620F0700AD8D14 /* ProjectsView.swift in Sources */,
+				3423D813267996CD00ACDC44 /* ProjectSummaryView.swift in Sources */,
 				3478C2C0266605D10026D841 /* ProjectHeaderView.swift in Sources */,
 				34A130B62668AEBA00377B3A /* AwardsView.swift in Sources */,
 				349C41DC2661B8210099C5F2 /* Main.xcdatamodeld in Sources */,
@@ -231,6 +238,7 @@
 				34CB215F2665E033004E70D9 /* Binding-OnChange.swift in Sources */,
 				34A130AC2668645600377B3A /* Sequence-Sorting.swift in Sources */,
 				34A130B02668A6F100377B3A /* Bundle-Decodable.swift in Sources */,
+				3423D8112679933500ACDC44 /* ItemListView.swift in Sources */,
 				34BD42E926620DAF00AD8D14 /* HomeView.swift in Sources */,
 				34B5100D26648B3100AA30DD /* Project-CoreDataHelper.swift in Sources */,
 				349C41CC2661B2EA0099C5F2 /* ChessMemoApp.swift in Sources */,
