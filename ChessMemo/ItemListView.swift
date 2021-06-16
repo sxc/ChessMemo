@@ -39,6 +39,7 @@ struct ItemListView: View {
                                     .foregroundColor(.secondary)
                             }
                         }
+                        .frame(maxWidth: .infinity, alignment: .leading)
                     }
                     
                     .padding()

@@ -53,6 +53,7 @@ struct HomeView: View {
                         ItemListView(title: "More to explore", items: items.wrappedValue.dropFirst(3))
                     }
                     .padding(.horizontal)
+                   
                 }
             }
             .background(Color.systemGroupedBackground.ignoresSafeArea())

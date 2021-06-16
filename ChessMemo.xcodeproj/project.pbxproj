@@ -28,7 +28,6 @@
 		34BD42E726620CCB00AD8D14 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34BD42E626620CCB00AD8D14 /* CloudKit.framework */; };
 		34BD42E926620DAF00AD8D14 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34BD42E826620DAF00AD8D14 /* HomeView.swift */; };
 		34BD42EB26620F0700AD8D14 /* ProjectsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34BD42EA26620F0700AD8D14 /* ProjectsView.swift */; };
-		34C0002E267859DB00E80748 /* Localizable.stringsdict in Resources */ = {isa = PBXBuildFile; fileRef = 34C00030267859DB00E80748 /* Localizable.stringsdict */; };
 		34C0003526785B1200E80748 /* Awards.json in Resources */ = {isa = PBXBuildFile; fileRef = 34C0003726785B1200E80748 /* Awards.json */; };
 		34CB215B2665D195004E70D9 /* EditItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34CB215A2665D195004E70D9 /* EditItemView.swift */; };
 		34CB215D2665D75E004E70D9 /* ItemRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34CB215C2665D75E004E70D9 /* ItemRowView.swift */; };
@@ -61,7 +60,6 @@
 		34BD42E626620CCB00AD8D14 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		34BD42E826620DAF00AD8D14 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		34BD42EA26620F0700AD8D14 /* ProjectsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsView.swift; sourceTree = "<group>"; };
-		34C0002F267859DB00E80748 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; name = en; path = en.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
 		34C0003626785B1200E80748 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = Base; path = Base.lproj/Awards.json; sourceTree = "<group>"; };
 		34CB215A2665D195004E70D9 /* EditItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditItemView.swift; sourceTree = "<group>"; };
 		34CB215C2665D75E004E70D9 /* ItemRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemRowView.swift; sourceTree = "<group>"; };
@@ -126,7 +124,6 @@
 				34A130B32668ADF200377B3A /* Award.swift */,
 				34A130B52668AEBA00377B3A /* AwardsView.swift */,
 				34FCF4F52669C00300575C1C /* Color-Additions.swift */,
-				34C00030267859DB00E80748 /* Localizable.stringsdict */,
 				3423D8102679933500ACDC44 /* ItemListView.swift */,
 				3423D812267996CD00ACDC44 /* ProjectSummaryView.swift */,
 			);
@@ -211,7 +208,6 @@
 				34C0003526785B1200E80748 /* Awards.json in Resources */,
 				349C41D32661B2EC0099C5F2 /* Preview Assets.xcassets in Resources */,
 				349C41D02661B2EC0099C5F2 /* Assets.xcassets in Resources */,
-				34C0002E267859DB00E80748 /* Localizable.stringsdict in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,14 +245,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		34C00030267859DB00E80748 /* Localizable.stringsdict */ = {
-			isa = PBXVariantGroup;
-			children = (
-				34C0002F267859DB00E80748 /* en */,
-			);
-			name = Localizable.stringsdict;
-			sourceTree = "<group>";
-		};
 		34C0003726785B1200E80748 /* Awards.json */ = {
 			isa = PBXVariantGroup;
 			children = (
