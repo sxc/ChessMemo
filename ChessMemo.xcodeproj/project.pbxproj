@@ -99,33 +99,19 @@
 		349C41CA2661B2EA0099C5F2 /* ChessMemo */ = {
 			isa = PBXGroup;
 			children = (
-				34BD42E426620C9A00AD8D14 /* ChessMemo.entitlements */,
+				34CDEEF3267ADA55004BC0BF /* Activities */,
+				34CDEEEE267AD7C4004BC0BF /* Models */,
+				34CDEEEF267AD7C8004BC0BF /* Views */,
+				34CDEEF0267AD7CD004BC0BF /* Controllers */,
+				34CDEEF2267AD883004BC0BF /* Configuration */,
+				34CDEEF1267AD878004BC0BF /* Extensions */,
+				349C41D42661B2EC0099C5F2 /* Info.plist */,
 				349C41CB2661B2EA0099C5F2 /* ChessMemoApp.swift */,
 				349C41CD2661B2EA0099C5F2 /* ContentView.swift */,
 				349C41CF2661B2EC0099C5F2 /* Assets.xcassets */,
 				3478C2C1266609680026D841 /* Colors.xcassets */,
-				349C41D42661B2EC0099C5F2 /* Info.plist */,
 				349C41D12661B2EC0099C5F2 /* Preview Content */,
 				349C41DA2661B8210099C5F2 /* Main.xcdatamodeld */,
-				34BD42E22661ED2D00AD8D14 /* DataController.swift */,
-				34BD42E826620DAF00AD8D14 /* HomeView.swift */,
-				34BD42EA26620F0700AD8D14 /* ProjectsView.swift */,
-				34B5100A2664783200AA30DD /* Item-CoreDataHelper.swift */,
-				34B5100C26648B3100AA30DD /* Project-CoreDataHelper.swift */,
-				34CB215A2665D195004E70D9 /* EditItemView.swift */,
-				34CB215C2665D75E004E70D9 /* ItemRowView.swift */,
-				34CB215E2665E033004E70D9 /* Binding-OnChange.swift */,
-				3478C2BF266605D10026D841 /* ProjectHeaderView.swift */,
-				3478C2C326660B410026D841 /* EditProjectView.swift */,
-				34A130AB2668645600377B3A /* Sequence-Sorting.swift */,
-				34A130AD2668A2D500377B3A /* SelectSomethingView.swift */,
-				34A130AF2668A6F100377B3A /* Bundle-Decodable.swift */,
-				34C0003726785B1200E80748 /* Awards.json */,
-				34A130B32668ADF200377B3A /* Award.swift */,
-				34A130B52668AEBA00377B3A /* AwardsView.swift */,
-				34FCF4F52669C00300575C1C /* Color-Additions.swift */,
-				3423D8102679933500ACDC44 /* ItemListView.swift */,
-				3423D812267996CD00ACDC44 /* ProjectSummaryView.swift */,
 			);
 			path = ChessMemo;
 			sourceTree = "<group>";
@@ -144,6 +130,92 @@
 				34BD42E626620CCB00AD8D14 /* CloudKit.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		34CDEEEE267AD7C4004BC0BF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				34B5100C26648B3100AA30DD /* Project-CoreDataHelper.swift */,
+				34B5100A2664783200AA30DD /* Item-CoreDataHelper.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		34CDEEEF267AD7C8004BC0BF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		34CDEEF0267AD7CD004BC0BF /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				34BD42E22661ED2D00AD8D14 /* DataController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		34CDEEF1267AD878004BC0BF /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				34FCF4F52669C00300575C1C /* Color-Additions.swift */,
+				34A130AF2668A6F100377B3A /* Bundle-Decodable.swift */,
+				34CB215E2665E033004E70D9 /* Binding-OnChange.swift */,
+				34A130AB2668645600377B3A /* Sequence-Sorting.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		34CDEEF2267AD883004BC0BF /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				34BD42E426620C9A00AD8D14 /* ChessMemo.entitlements */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		34CDEEF3267ADA55004BC0BF /* Activities */ = {
+			isa = PBXGroup;
+			children = (
+				34CDEEF6267ADA69004BC0BF /* Home */,
+				34CDEEF4267ADA5C004BC0BF /* Projects */,
+				34CDEEF5267ADA5F004BC0BF /* Awards */,
+			);
+			path = Activities;
+			sourceTree = "<group>";
+		};
+		34CDEEF4267ADA5C004BC0BF /* Projects */ = {
+			isa = PBXGroup;
+			children = (
+				34CB215A2665D195004E70D9 /* EditItemView.swift */,
+				34A130AD2668A2D500377B3A /* SelectSomethingView.swift */,
+				3478C2C326660B410026D841 /* EditProjectView.swift */,
+				34BD42EA26620F0700AD8D14 /* ProjectsView.swift */,
+				34CB215C2665D75E004E70D9 /* ItemRowView.swift */,
+				3478C2BF266605D10026D841 /* ProjectHeaderView.swift */,
+			);
+			path = Projects;
+			sourceTree = "<group>";
+		};
+		34CDEEF5267ADA5F004BC0BF /* Awards */ = {
+			isa = PBXGroup;
+			children = (
+				34C0003726785B1200E80748 /* Awards.json */,
+				34A130B32668ADF200377B3A /* Award.swift */,
+				34A130B52668AEBA00377B3A /* AwardsView.swift */,
+			);
+			path = Awards;
+			sourceTree = "<group>";
+		};
+		34CDEEF6267ADA69004BC0BF /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				34BD42E826620DAF00AD8D14 /* HomeView.swift */,
+				3423D8102679933500ACDC44 /* ItemListView.swift */,
+				3423D812267996CD00ACDC44 /* ProjectSummaryView.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
