@@ -100,7 +100,6 @@
 			isa = PBXGroup;
 			children = (
 				34CDEEF3267ADA55004BC0BF /* Activities */,
-				34CDEEEE267AD7C4004BC0BF /* Models */,
 				34CDEEEF267AD7C8004BC0BF /* Views */,
 				34CDEEF0267AD7CD004BC0BF /* Controllers */,
 				34CDEEF2267AD883004BC0BF /* Configuration */,
@@ -132,15 +131,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		34CDEEEE267AD7C4004BC0BF /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				34B5100C26648B3100AA30DD /* Project-CoreDataHelper.swift */,
-				34B5100A2664783200AA30DD /* Item-CoreDataHelper.swift */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
 		34CDEEEF267AD7C8004BC0BF /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -159,6 +149,8 @@
 		34CDEEF1267AD878004BC0BF /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				34B5100A2664783200AA30DD /* Item-CoreDataHelper.swift */,
+				34B5100C26648B3100AA30DD /* Project-CoreDataHelper.swift */,
 				34FCF4F52669C00300575C1C /* Color-Additions.swift */,
 				34A130AF2668A6F100377B3A /* Bundle-Decodable.swift */,
 				34CB215E2665E033004E70D9 /* Binding-OnChange.swift */,
