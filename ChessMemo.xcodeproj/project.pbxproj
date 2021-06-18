@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		3423D8112679933500ACDC44 /* ItemListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3423D8102679933500ACDC44 /* ItemListView.swift */; };
 		3423D813267996CD00ACDC44 /* ProjectSummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3423D812267996CD00ACDC44 /* ProjectSummaryView.swift */; };
+		3476593D267C53EE0073DFD1 /* UnlockManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3476593C267C53EE0073DFD1 /* UnlockManager.swift */; };
 		3478C2C0266605D10026D841 /* ProjectHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3478C2BF266605D10026D841 /* ProjectHeaderView.swift */; };
 		3478C2C2266609680026D841 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3478C2C1266609680026D841 /* Colors.xcassets */; };
 		3478C2C426660B410026D841 /* EditProjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3478C2C326660B410026D841 /* EditProjectView.swift */; };
@@ -49,6 +50,8 @@
 /* Begin PBXFileReference section */
 		3423D8102679933500ACDC44 /* ItemListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemListView.swift; sourceTree = "<group>"; };
 		3423D812267996CD00ACDC44 /* ProjectSummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectSummaryView.swift; sourceTree = "<group>"; };
+		345A0F4D267C72DA00424784 /* Configuration.storekit */ = {isa = PBXFileReference; lastKnownFileType = text; path = Configuration.storekit; sourceTree = "<group>"; };
+		3476593C267C53EE0073DFD1 /* UnlockManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnlockManager.swift; sourceTree = "<group>"; };
 		3478C2BF266605D10026D841 /* ProjectHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectHeaderView.swift; sourceTree = "<group>"; };
 		3478C2C1266609680026D841 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		3478C2C326660B410026D841 /* EditProjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProjectView.swift; sourceTree = "<group>"; };
@@ -133,6 +136,8 @@
 				3478C2C1266609680026D841 /* Colors.xcassets */,
 				349C41D12661B2EC0099C5F2 /* Preview Content */,
 				349C41DA2661B8210099C5F2 /* Main.xcdatamodeld */,
+				3476593C267C53EE0073DFD1 /* UnlockManager.swift */,
+				345A0F4D267C72DA00424784 /* Configuration.storekit */,
 			);
 			path = ChessMemo;
 			sourceTree = "<group>";
@@ -351,6 +356,7 @@
 				34FCF4F62669C00300575C1C /* Color-Additions.swift in Sources */,
 				3478C2C426660B410026D841 /* EditProjectView.swift in Sources */,
 				34BD42E32661ED2D00AD8D14 /* DataController.swift in Sources */,
+				3476593D267C53EE0073DFD1 /* UnlockManager.swift in Sources */,
 				34A130AE2668A2D500377B3A /* SelectSomethingView.swift in Sources */,
 				34A130B42668ADF200377B3A /* Award.swift in Sources */,
 				34CB215D2665D75E004E70D9 /* ItemRowView.swift in Sources */,
