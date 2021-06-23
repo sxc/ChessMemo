@@ -13,7 +13,22 @@ import CoreSpotlight
 class DataController: ObservableObject {
     let container: NSPersistentCloudKitContainer
     
-    init(inMemory: Bool = false) {
+    /// saving user data
+    let defaults: UserDefaults
+    
+    /// Loads and saves whether unlock
+    var fullVersionUnlocked: Bool {
+        get {
+            UserDefaults.standard.bool(forKey: "fullVersionUnlocked")
+        }
+        
+        set {
+            defaults.set(newValue, forKey: "fullVersionUnlocked")
+        }
+    }
+    init(inMemory: Bool = false, defaults: UserDefaults = .standard) {
+        self.defaults = defaults
+        
         container = NSPersistentCloudKitContainer(name: "Main")
         
         if inMemory {
@@ -21,6 +36,7 @@ class DataController: ObservableObject {
         }
         
         container.loadPersistentStores { storeDescription, error in
+            self.container.viewContext.automaticallyMergesChangesFromParent = true 
             if let error = error {
                 fatalError("Fatal error loading stories: \(error.localizedDescription)")
             }
